@@ -1,0 +1,94 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 16px;
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  input[type="number"],
+  input[type="range"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+  }
+  
+  .unit-options,
+  .ramps-options,
+  .elevators-options,
+  .staircases-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .unit-options input[type="radio"],
+  .ramps-options input[type="radio"],
+  .elevators-options input[type="radio"],
+  .staircases-options input[type="radio"] {
+    margin-right: 4px;
+  }
+  
+  .unit-options label,
+  .ramps-options label,
+  .elevators-options label,
+  .staircases-options label {
+    margin-right: 16px;
+    font-weight: normal;
+  }
+  
+  button {
+    grid-column: 1/-1;
+    background-color: #79BE35;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6ba52f;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #ccc;
+  }
+  
+  .error {
+    color: #FF0000;
+    margin-top: 8px;
+  }
+  
+  .result {
+    margin-top: 16px;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
